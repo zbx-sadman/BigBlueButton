@@ -11,7 +11,7 @@ Support metrics:
 - Participants: total count, moderators count, listeners & participants with enabled voice/video feature.
 
 ### How to use with Zabbix
-1. Add string ``UserParameter=bbb.miner[*],curl -s https://**bbb.example.com**/bigbluebutton/api/$1?checksum=`echo -n "$1BigBlueButtonSecretStringThere" | sha1sum |  head -c 40` 2>&1`` to the end of your ``zabbix_agentd.conf`` file;
+1. Add string ``UserParameter=bbb.miner[*],curl -s https://bbb.example.com/bigbluebutton/api/$1?checksum=`echo -n "$1BigBlueButtonSecretStringThere" | sha1sum |  head -c 40` 2>&1`` to the end of your ``zabbix_agentd.conf`` file;
 2. Replace **bbb.example.com** with your BBB server hostname which used for the SSL-certificate
 3. Replace **BigBlueButtonSecretStringThere** with your BBB server secret. You can get it from ``bbb-conf --secret`` command output;
 4. Restart Zabbix agent;
