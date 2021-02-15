@@ -8,7 +8,7 @@ Tested on:
 
 Metrics supported:
 - Meetings: total count, running count, used as breakout room, meetings with joined participants & recording possibility;
-- Participants: total count, moderators count, listeners & participants with enabled voice/video feature.
+- Participants: total count, moderators count, listeners & speakers & broadcasters.
 
 Сlarification of the roles of users:
 - Participants / viewers. Peoples who connected to meeting, but not connected to audio stream (have no microphone or headphones). They can chat, respond to polls, view presentation, display an emoji (such as their raised hand), and participate in a breakout sessions;
