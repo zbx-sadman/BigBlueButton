@@ -11,7 +11,10 @@ Metrics supported:
 - Participants: total count, moderators count, listeners & speakers & broadcasters;
 - Recordings: total count, processing, processed, published, unpublished, deleted; size of raw & published recordings.
 
-Сlarification of the roles of users:
+LLD available for:
+- Meetings. All individual metrics will placed to the application which contains name of the meeting.
+
+Clarification of the roles of users:
 - Participants / viewers. Peoples who connected to meeting, but not connected to audio stream (have no microphone or headphones). They can chat, respond to polls, view presentation, display an emoji (such as their raised hand), and participate in a breakout sessions;
 - Listeners. Participants who connected to audio stream in the "listen only" mode. They can do everything a viewers can, plus listen other participants, who have mic;
 - Speakers. Participants who connect to audio stream with using voice feature. They can do everything a listeners can, plus talk to other participants thru microphone;
@@ -25,5 +28,7 @@ Metrics supported:
 4. Restart Zabbix agent;
 4. Import [template](https://github.com/zbx-sadman/BigBlueButton/tree/master/Zabbix_Templates) to the Zabbix Server;
 6. Enjoy.
+
+**Hint**: All LLD-generated meetings's Applications will be stored for some time which specified in the {$KEEP_MEETING_GENERATED_ITEMS} macro, which default value is 7 days. If you need more history data - just create that macro on host level and set it value to... 25 years, for example.
 
 **Beware**: BBB API's response can be big - ~65kb on _getMeetings_ request to the BBB that serves 4 meeting with 50 participants per each. Do not set Template's 'master items' update interval so small.
