@@ -1,6 +1,14 @@
 # BigBlueButton tool set
 This tools helps to monitoring BigBlueButon with Zabbix.
 
+Graph examples
+
+![Summary traffic / participants](https://user-images.githubusercontent.com/12827470/109484184-30a68c80-7a91-11eb-99c3-8bcaf19e11be.png)
+
+![Total number of participants](https://user-images.githubusercontent.com/12827470/109484442-7cf1cc80-7a91-11eb-9d3b-df1b7f5825e0.png)
+
+
+
 ## BBB integration/template for Zabbix
 Tested on:
 
