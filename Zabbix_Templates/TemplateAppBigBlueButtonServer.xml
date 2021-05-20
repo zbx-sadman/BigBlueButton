@@ -93,7 +93,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -161,7 +161,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -229,7 +229,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -297,7 +297,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -365,7 +365,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -433,7 +433,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -441,7 +441,7 @@ Tested on release 2.2</description>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>bbb.miner[getMeetings]</key>
+                    <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     <delay>1m</delay>
                     <history>0</history>
                     <trends>0</trends>
@@ -500,7 +500,7 @@ Tested on release 2.2</description>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>bbb.miner[getRecordings]</key>
+                    <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     <delay>10m</delay>
                     <history>0</history>
                     <trends>0</trends>
@@ -619,7 +619,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -687,7 +687,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -755,7 +755,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -823,7 +823,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -891,7 +891,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -959,7 +959,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1027,7 +1027,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1095,7 +1095,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1163,7 +1163,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1231,7 +1231,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getRecordings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getRecordings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1299,7 +1299,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1367,7 +1367,7 @@ Tested on release 2.2</description>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </item>
             </items>
@@ -1470,7 +1470,7 @@ Tested on release 2.2</description>
                                 </application_prototype>
                             </application_prototypes>
                             <master_item>
-                                <key>bbb.miner[getMeetings]</key>
+                                <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                             </master_item>
                         </item_prototype>
                         <item_prototype>
@@ -1539,7 +1539,7 @@ Tested on release 2.2</description>
                                 </application_prototype>
                             </application_prototypes>
                             <master_item>
-                                <key>bbb.miner[getMeetings]</key>
+                                <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                             </master_item>
                         </item_prototype>
                         <item_prototype>
@@ -1608,7 +1608,7 @@ Tested on release 2.2</description>
                                 </application_prototype>
                             </application_prototypes>
                             <master_item>
-                                <key>bbb.miner[getMeetings]</key>
+                                <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                             </master_item>
                         </item_prototype>
                         <item_prototype>
@@ -1677,7 +1677,7 @@ Tested on release 2.2</description>
                                 </application_prototype>
                             </application_prototypes>
                             <master_item>
-                                <key>bbb.miner[getMeetings]</key>
+                                <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                             </master_item>
                         </item_prototype>
                         <item_prototype>
@@ -1746,7 +1746,7 @@ Tested on release 2.2</description>
                                 </application_prototype>
                             </application_prototypes>
                             <master_item>
-                                <key>bbb.miner[getMeetings]</key>
+                                <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                             </master_item>
                         </item_prototype>
                     </item_prototypes>
@@ -1875,7 +1875,7 @@ return ret;</params>
                         </step>
                     </preprocessing>
                     <master_item>
-                        <key>bbb.miner[getMeetings]</key>
+                        <key>bbb.miner[{$BBB_HOSTNAME},{$BBB_SECRET},getMeetings]</key>
                     </master_item>
                 </discovery_rule>
             </discovery_rules>
@@ -1888,10 +1888,21 @@ return ret;</params>
                 <macro>
                     <macro>{$BBB_KEEP_MEETING_GENERATED_ITEMS}</macro>
                     <value>7d</value>
+					<description>All LLD-generated meetings's Applications will be stored for the time specified in this macro.</description>
                 </macro>
                 <macro>
                     <macro>{$BBB_KEEP_MEETING_TREND}</macro>
                     <value>365d</value>
+                </macro>
+                <macro>
+                    <macro>{$BBB_HOSTNAME}</macro>
+                    <value>bbb.example.com</value>
+					<description>BBB server hostname which used for the SSL-certificate. Copy to you host using 'inherited and host macros' after linking the template.</description>
+                </macro>
+                <macro>
+                    <macro>{$BBB_SECRET}</macro>
+                    <value>BigBlueButtonSecretStringThere</value>
+					<description>Your BBB server secret. You can get it from bbb-conf --secret command output. Copy to you host using 'inherited and host macros' after linking the template.</description>
                 </macro>
             </macros>
             <templates/>
