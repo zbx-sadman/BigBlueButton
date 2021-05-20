@@ -1888,7 +1888,6 @@ return ret;</params>
                 <macro>
                     <macro>{$BBB_KEEP_MEETING_GENERATED_ITEMS}</macro>
                     <value>7d</value>
-					<description>All LLD-generated meetings's Applications will be stored for the time specified in this macro.</description>
                 </macro>
                 <macro>
                     <macro>{$BBB_KEEP_MEETING_TREND}</macro>
@@ -1897,12 +1896,10 @@ return ret;</params>
                 <macro>
                     <macro>{$BBB_HOSTNAME}</macro>
                     <value>bbb.example.com</value>
-					<description>BBB server hostname which used for the SSL-certificate. Copy to you host using 'inherited and host macros' after linking the template.</description>
                 </macro>
                 <macro>
                     <macro>{$BBB_SECRET}</macro>
                     <value>BigBlueButtonSecretStringThere</value>
-					<description>Your BBB server secret. You can get it from bbb-conf --secret command output. Copy to you host using 'inherited and host macros' after linking the template.</description>
                 </macro>
             </macros>
             <templates/>
