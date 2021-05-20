@@ -1401,7 +1401,7 @@ Tested on release 2.2</description>
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>{$KEEP_MEETING_GENERATED_ITEMS}</lifetime>
+                    <lifetime>{$BBB_KEEP_MEETING_GENERATED_ITEMS}</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
@@ -1411,8 +1411,8 @@ Tested on release 2.2</description>
                             <snmp_oid/>
                             <key>bbb.broadcastersCount[{#ID}]</key>
                             <delay>0</delay>
-                            <history>{$KEEP_MEETING_DATA}</history>
-                            <trends>{$KEEP_MEETING_TREND}</trends>
+                            <history>{$BBB_KEEP_MEETING_DATA}</history>
+                            <trends>{$BBB_KEEP_MEETING_TREND}</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1480,8 +1480,8 @@ Tested on release 2.2</description>
                             <snmp_oid/>
                             <key>bbb.listenersCount[{#ID}]</key>
                             <delay>0</delay>
-                            <history>{$KEEP_MEETING_DATA}</history>
-                            <trends>{$KEEP_MEETING_TREND}</trends>
+                            <history>{$BBB_KEEP_MEETING_DATA}</history>
+                            <trends>{$BBB_KEEP_MEETING_TREND}</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1549,8 +1549,8 @@ Tested on release 2.2</description>
                             <snmp_oid/>
                             <key>bbb.moderatorCount[{#ID}]</key>
                             <delay>0</delay>
-                            <history>{$KEEP_MEETING_DATA}</history>
-                            <trends>{$KEEP_MEETING_TREND}</trends>
+                            <history>{$BBB_KEEP_MEETING_DATA}</history>
+                            <trends>{$BBB_KEEP_MEETING_TREND}</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1618,8 +1618,8 @@ Tested on release 2.2</description>
                             <snmp_oid/>
                             <key>bbb.participantsCount[{#ID}]</key>
                             <delay>0</delay>
-                            <history>{$KEEP_MEETING_DATA}</history>
-                            <trends>{$KEEP_MEETING_TREND}</trends>
+                            <history>{$BBB_KEEP_MEETING_DATA}</history>
+                            <trends>{$BBB_KEEP_MEETING_TREND}</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1687,8 +1687,8 @@ Tested on release 2.2</description>
                             <snmp_oid/>
                             <key>bbb.voiceParticipantsCount[{#ID}]</key>
                             <delay>0</delay>
-                            <history>{$KEEP_MEETING_DATA}</history>
-                            <trends>{$KEEP_MEETING_TREND}</trends>
+                            <history>{$BBB_KEEP_MEETING_DATA}</history>
+                            <trends>{$BBB_KEEP_MEETING_TREND}</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
@@ -1882,15 +1882,15 @@ return ret;</params>
             <httptests/>
             <macros>
                 <macro>
-                    <macro>{$KEEP_MEETING_DATA}</macro>
+                    <macro>{$BBB_KEEP_MEETING_DATA}</macro>
                     <value>90d</value>
                 </macro>
                 <macro>
-                    <macro>{$KEEP_MEETING_GENERATED_ITEMS}</macro>
+                    <macro>{$BBB_KEEP_MEETING_GENERATED_ITEMS}</macro>
                     <value>7d</value>
                 </macro>
                 <macro>
-                    <macro>{$KEEP_MEETING_TREND}</macro>
+                    <macro>{$BBB_KEEP_MEETING_TREND}</macro>
                     <value>365d</value>
                 </macro>
             </macros>
