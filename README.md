@@ -40,7 +40,7 @@ Clarification of the roles of users:
 6. Link template to the BBB host with Zabbix web-interface;
 7. Enjoy.
 
-#### 2. Using host-level macroses (credits @felcaetano)
+#### 2. Using host-level macroses (credits [@felcaetano](https://github.com/felcaetano))
 
 1. Add string ``UserParameter=bbb.miner[*],curl -s https://$1/bigbluebutton/api/$3?checksum=`echo -n "$3$2" | sha1sum | head -c 40` 2>&1`` to the end of your ``zabbix_agentd.conf`` file;
 2. Restart Zabbix agent;
