@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template App BigBlueButton Server</template>
-            <name>Template App BigBlueButton Server</name>
+            <template>Template App BigBlueButton Server1</template>
+            <name>Template App BigBlueButton Server1</name>
             <description>Requirements: BigBlueButton.&#13;
 &#13;
 Tested on release 2.2</description>
@@ -1856,14 +1856,13 @@ Tested on release 2.2</description>
                     <preprocessing>
                         <step>
                             <type>21</type>
-                            <params>var ret = &quot;[]&quot;;
-data = value.match(/&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(\w+)&lt;\/meetingID&gt;/g);
-if (data) { 
-  data = data.toString();
-  data = data.replace(/&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(\w+)&lt;\/meetingID&gt;/g,'{&quot;{#NAME}&quot;: &quot;$1&quot;, &quot;{#ID}&quot;: &quot;$2&quot;}'); 
-  ret = data.replace(/(.*)/,'[$1]');
-}
-return ret;</params>
+<params>const re  = /&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(([\w_-]+)&lt;\/meetingID&gt;[\s\S]*?&lt;isBreakout&gt;(\w+)&lt;\/isBreakout&gt;/g;
+const fmt = '{&quot;{#NAME}&quot;: &quot;$1&quot;, &quot;{#ID}&quot;: &quot;$2&quot;, &quot;{#ISBREAKOUT}&quot;: $3}';
+var lld = '[';
+var data = value.match(re);
+if (data) { lld += data.toString().replace(re,fmt); }
+lld += ']';
+return lld;</params>
                             <error_handler>0</error_handler>
                             <error_handler_params/>
                         </step>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2021-02-16T09:41:20Z</date>
+    <date>2021-06-02T14:16:28Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -13,7 +13,9 @@
             <name>Template App BigBlueButton Server</name>
             <description>Requirements: BigBlueButton.&#13;
 &#13;
-Tested on release 2.2</description>
+Tested on release 2.2.&#13;
+&#13;
+Author: zbx.sadman@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -442,7 +444,7 @@ Tested on release 2.2</description>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>bbb.miner[getMeetings]</key>
-                    <delay>1m</delay>
+                    <delay>5m;1m/1-7,08:00-22:00</delay>
                     <history>0</history>
                     <trends>0</trends>
                     <status>0</status>
@@ -532,7 +534,14 @@ Tested on release 2.2</description>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
-                    <preprocessing/>
+                    <preprocessing>
+                        <step>
+                            <type>20</type>
+                            <params>30m</params>
+                            <error_handler>0</error_handler>
+                            <error_handler_params/>
+                        </step>
+                    </preprocessing>
                     <jmx_endpoint/>
                     <timeout>3s</timeout>
                     <url/>
@@ -1753,7 +1762,7 @@ Tested on release 2.2</description>
                     <trigger_prototypes/>
                     <graph_prototypes>
                         <graph_prototype>
-                            <name>[{#NAME}] Participants summary</name>
+                            <name>[{#NAME}] Number of participants</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1856,14 +1865,13 @@ Tested on release 2.2</description>
                     <preprocessing>
                         <step>
                             <type>21</type>
-                            <params>var ret = &quot;[]&quot;;
-data = value.match(/&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(\w+)&lt;\/meetingID&gt;/g);
-if (data) { 
-  data = data.toString();
-  data = data.replace(/&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(\w+)&lt;\/meetingID&gt;/g,'{&quot;{#NAME}&quot;: &quot;$1&quot;, &quot;{#ID}&quot;: &quot;$2&quot;}'); 
-  ret = data.replace(/(.*)/,'[$1]');
-}
-return ret;</params>
+                            <params>const re  = /&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(([\w_-]+)&lt;\/meetingID&gt;[\s\S]*?&lt;isBreakout&gt;(\w+)&lt;\/isBreakout&gt;/g;
+const fmt = '{&quot;{#NAME}&quot;: &quot;$1&quot;, &quot;{#ID}&quot;: &quot;$2&quot;, &quot;{#ISBREAKOUT}&quot;: $3}';
+var lld = '[';
+var data = value.match(re);
+if (data) { lld += data.toString().replace(re,fmt); }
+lld += ']';
+return lld;</params>
                             <error_handler>0</error_handler>
                             <error_handler_params/>
                         </step>
@@ -1901,7 +1909,7 @@ return ret;</params>
     </templates>
     <graphs>
         <graph>
-            <name>[Total] Meetings summary</name>
+            <name>[Total] Number of meetings</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1981,7 +1989,7 @@ return ret;</params>
             </graph_items>
         </graph>
         <graph>
-            <name>[Total] Participants summary</name>
+            <name>[Total] Number of participants</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
