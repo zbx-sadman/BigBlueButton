@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template App BigBlueButton Server1</template>
-            <name>Template App BigBlueButton Server1</name>
+            <template>Template App BigBlueButton Server</template>
+            <name>Template App BigBlueButton Server</name>
             <description>Requirements: BigBlueButton.&#13;
 &#13;
 Tested on release 2.2</description>
