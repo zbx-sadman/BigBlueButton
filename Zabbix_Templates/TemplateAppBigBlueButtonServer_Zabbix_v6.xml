@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>6.0</version>
-    <date>2023-11-24T17:16:28Z</date>
+    <date>2024-06-17T13:35:23Z</date>
     <groups>
         <group>
             <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
@@ -786,7 +786,7 @@ Author: zbx.sadman@gmail.com</description>
                         <step>
                             <type>JAVASCRIPT</type>
                             <parameters>
-                                <parameter>const re  = /&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;(([\w_-]+)&lt;\/meetingID&gt;[\s\S]*?&lt;isBreakout&gt;(\w+)&lt;\/isBreakout&gt;/g;
+                                <parameter>const re  = /&lt;meetingName&gt;(.*)&lt;\/meetingName&gt;[\s\S]*?&lt;meetingID&gt;([\w_-]+)&lt;\/meetingID&gt;[\s\S]*?&lt;isBreakout&gt;(\w+)&lt;\/isBreakout&gt;/g;
 const fmt = '{&quot;{#NAME}&quot;: &quot;$1&quot;, &quot;{#ID}&quot;: &quot;$2&quot;, &quot;{#ISBREAKOUT}&quot;: $3}';
 var lld = '[';
 var data = value.match(re);
