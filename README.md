@@ -8,11 +8,10 @@ Graph examples
 ![Total number of participants](https://user-images.githubusercontent.com/12827470/109484442-7cf1cc80-7a91-11eb-9d3b-df1b7f5825e0.png)
 
 
-
 ## BBB integration/template for Zabbix
 Tested on:
 
-- Production mode: BigBlueButton v2.2, Zabbix 4.2.5.
+- Production mode: BigBlueButton v2.7, Zabbix 6.0.14.
 
 Metrics supported:
 - Meetings: total count, running count, used as breakout room, meetings with joined participants & recording possibility;
